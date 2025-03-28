@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonteTaxi - Servicio de Taxis en Montería</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #3841a3;
+            color: #ecf0f1;
+        }
+        header {
+            background-color: #318090dd;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #7f8c8d;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav span {
+            color: white;
+            margin: 0 10px;
+            cursor: default;
+        }
+        main {
+            display: flex;
+            flex-grow: 1;
+            padding: 20px;
+        }
+        aside {
+            width: 25%;
+            background-color: #2b99e2d0;
+            padding: 20px;
+            color: white;
+        }
+        .content1 {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+        }
+        figure {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #3498dbac;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #95a5a6;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            color: white;
+        }
+        input[type="submit"] {
+            background-color: #e3b3379e;
+            color: white;
+            border: none;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .servicios {
+            margin-top: 15px;
+        }
+        .servicios h3 {
+            margin-bottom: 10px;
+            color: #ecf0f1;
+        }
+        .servicios ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .servicios ul li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .servicios ul li::before {
+            content: '✓';
+            color: #f1c40f;
+            margin-right: 10px;
+        }
+        * {
+            cursor: default;
+        }
+        .solicita-taxi {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Taxi Móvil Montería</h1>
+    </header>
+
+    <nav>
+        <span>Inicio</span>
+        <span>Servicios</span>
+        <span>Zonas</span>
+        <span>Contacto</span>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Sobre Nuestro Servicio</h2>
+            <p>Somos la aplicación líder de transporte en Montería, ofreciendo servicios de taxi rápidos, seguros y confiables.</p>
+            <p>Nuestra prioridad es conectar conductores profesionales con pasajeros de manera eficiente y segura.</p>
+            
+            <div class="servicios">
+                <h3>Nuestros Servicios</h3>
+                <ul>
+                    <li>Taxi Estándar: Económico y rápido</li>
+                    <li>Taxi Premium: Comodidad extra</li>
+                    <li>Servicio Ejecutivo: Para empresarios</li>
+                    <li>Rutas Interurbanas: Fuera de la ciudad</li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="content1">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKKUmZmPqhMl7QqNy2jUMhIAl5HYewHdNb2Q&s" alt="Taxi en Montería">
+            </figure>
+
+            <article>
+                <h2 class="solicita-taxi">Solicita Tu Taxi</h2>
+                <form>
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="pickup">Punto de Recogida:</label>
+                    <input type="text" id="pickup" name="pickup" placeholder="Barrio o Dirección" required>
+
+                    <label for="destination">Destino:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Dirección de destino" required>
+
+                    <label for="service">Tipo de Servicio:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="standard">Taxi Estándar</option>
+                        <option value="premium">Taxi Premium</option>
+                        <option value="executive">Servicio Ejecutivo</option>
+                        <option value="interurban">Ruta Interurbana</option>
+                    </select>
+
+                    <label for="additional">Comentarios Adicionales:</label>
+                    <textarea id="additional" name="additional" rows="4" placeholder="Información adicional o instrucciones especiales"></textarea>
+
+                    <input type="submit" value="Solicitar Taxi">
+                </form>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 MonteTaxi. Todos los derechos reservados. Servicio de Transporte en Montería.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopción de Mascotas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f4f8;
+            color: #2c3e50;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #13bf9ab2;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        main {
+            display: flex;
+            flex-grow: 1;
+            padding: 20px;
+        }
+        aside {
+            width: 25%;
+            background-color: #41b973be;
+            padding: 20px;
+            color: white;
+        }
+        .content {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+        }
+        figure {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: default;
+        }
+        footer {
+            background-color: #6c653f8e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        * {
+            transition: none !important;
+        }
+        input[type="submit"]:hover,
+        a:hover {
+            background: inherit !important;
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Adopción de Mascotas</h1>
+    </header>
+
+    <nav>
+        <span>Inicio</span>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una organización dedicada a encontrar hogares amorosos para mascotas necesitadas. Creemos que cada animal merece una familia que lo cuide, lo proteja y le brinde todo su cariño.</p>
+            <p>Nuestro objetivo es conectar a las mascotas sin hogar con familias comprometidas que estén dispuestas a brindarles amor, cuidado y una segunda oportunidad de vida.</p>
+            <p>Trabajamos incansablemente para rescatar, rehabilitar y rehubicar a perros, gatos y otros animales que han sido abandonados o necesitan un nuevo hogar.</p>
+        </aside>
+
+        <div class="content">
+            <figure>
+                <img src="https://purina.com.co/sites/default/files/2022-10/mascotas-en-adopcion-beneficios-y-requisitos-para-adoptar-un-perro-o-gato.png" alt="Mascota en adopción">
+            </figure>
+
+            <article>
+                <h2>Formulario de Adopción</h2>
+                <form>
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="pet">Mascota de Interés:</label>
+                    <select id="pet" name="pet" required>
+                        <option value="">Selecciona una mascota</option>
+                        <option value="dog">Perro</option>
+                        <option value="cat">Gato</option>
+                        <option value="other">Otro</option>
+                    </select>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <input type="submit" value="Enviar Solicitud">
+                </form>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Adopción de Mascotas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

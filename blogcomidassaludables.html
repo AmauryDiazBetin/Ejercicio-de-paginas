@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Recetas Saludables</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: rgb(144, 238, 144);
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(173, 255, 173);
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-grow: 1;
+        }
+        aside {
+            background-color: rgb(208, 255, 208);
+            width: 200px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            background-color: rgb(230, 255, 230);
+            flex-grow: 1;
+            padding: 1rem;
+        }
+        .article-container {
+            display: flex;
+            margin-bottom: 1rem;
+            border: 1px solid #90ee90cc;
+            padding: 1rem;
+        }
+        figure {
+            margin: 0;
+            margin-right: 1rem;
+        }
+        figure img {
+            max-width: 400px;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .article-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        footer {
+            background-color: rgba(144, 238, 144, 0.823);
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Blog de Recetas Saludables</h1>
+    </header>
+    <nav>
+        <span>Inicio--</span>
+        <span>Desayunos--</span>
+        <span>Almuerzos--</span>
+        <span>Cenas</span>
+    </nav>
+    <main>
+        <aside>
+            <h2>Categorías de Recetas</h2>
+            <span>Veganas</span>
+            <span>Sin Gluten</span>
+            <span>Proteicas</span>
+            <span>Bajas en Calorías</span>
+        </aside>
+        <div class="content">
+            <div class="article-container">
+                <figure>
+                    <img src="https://d1uz88p17r663j.cloudfront.net/original/a2380258175359af4b4a7c7f06d2b57b_dados_de_pollo_con_vegetales.jpg" alt="Receta Saludable">
+                </figure>
+                <div class="article-text">
+                    <div>
+                        <h2>Pollo en cuadros con verduras asadas</h2>
+                        <p>Una receta increíblemente saludable llena de nutrientes y sabor,</p>
+                        <p>perfecta para comenzar o finalizar el día, ya que por sus ingredientes no es pesada para el estomago.</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Consejos de Nutrición</h3>
+            <p>Mantener una dieta balanceada es clave para una vida saludable. Cada ingrediente cuenta en tu journey de bienestar.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Blog de Recetas Saludables. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
